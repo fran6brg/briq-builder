@@ -7,3 +7,6 @@ export { Signer } from 'starknet/signer/default';
 export { toBN, toHex } from 'starknet/utils/number';
 export { getSelectorFromName } from 'starknet/utils/hash';
 export { computeHashOnElements } from 'starknet/utils/hash';
+
+export { connect, disconnect } from 'get-starknet-wallet';
+export type { IStarknetWindowObject } from 'get-starknet-wallet';

@@ -5,6 +5,15 @@ import './index.css'
 
 import './FontAwesome';
 
+window.gsw = true;
+
+// Fake polyfill to make starknet.js work.
+window.Buffer = {
+    alloc: function() {},
+};
+
+
+
 import App from './App.vue'
 export var app = createApp(App);
 
